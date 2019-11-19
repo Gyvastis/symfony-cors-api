@@ -1,0 +1,6 @@
+security:
+    access_control:
+        # - { path: ^/admin, roles: ROLE_ADMIN }
+        - { path: ^/api/cron, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/key, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/, roles: ROLE_USER }
